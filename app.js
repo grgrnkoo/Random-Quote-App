@@ -6,7 +6,7 @@ const refreshQuote = () => {
     fetch('https://api.adviceslip.com/advice').then((request) => {
         return request.json();
     }).then((data) => {
-        quote.textContent = data.slip.advice;
+        quote.textContent = `"${data.slip.advice}"`;
         idNumber.textContent = data.slip.id;
     })
 }
