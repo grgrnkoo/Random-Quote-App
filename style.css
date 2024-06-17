@@ -40,6 +40,8 @@ main {
     max-width: 540px;
     border-radius: 20px;
     box-shadow: 10px 10px 50px var(--for-shadow);
+    padding: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 #quote {
@@ -55,6 +57,7 @@ main {
     padding: 1.2rem;
     border-radius: 50%;
     transform: translateY(50%);
+    cursor: pointer;
 }
 
 img {
@@ -72,4 +75,15 @@ h1 {
     font-size: .8rem;
     margin-top: 3rem;
     letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+    #quote {
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+
+    picture {
+        margin-top: 1.5rem;
+    }
 }
